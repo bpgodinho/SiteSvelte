@@ -103,7 +103,13 @@
 </script>
 
 <style>
-:global(body) { margin: 0; padding: 0; }
+:global(body) { margin: 0; padding: 0; font-family: 'PixelFont';}
+
+@font-face {
+    font-family: 'PixelFont'; /*a name to be used later*/
+    src: url('VCR_OSD_MONO_1.001.ttf'); /*URL to font*/
+}
+
 .bg_whouse{
     max-height: 100vh;
     position: fixed;
@@ -169,7 +175,9 @@
 </style>
 
 <main>
-    <div class="p1_health">{p1_health}</div>
+    <div class="p1_health">
+        {p1_health}
+    </div>
     <div class="timer">{seconds}</div>
     <div class="p2_health">{p2_health}</div>
     <div class="log">{winStr}</div>
